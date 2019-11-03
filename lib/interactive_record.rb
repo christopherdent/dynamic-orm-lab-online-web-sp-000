@@ -60,6 +60,7 @@ class InteractiveRecord
     
     column_names.each do |c|
       sql = "SELECT * FROM #{self.table_name} where value_name == c" 
+      DB[:conn].execute(sql)
    end 
   end 
    
