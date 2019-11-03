@@ -55,26 +55,18 @@ class InteractiveRecord
   end 
   
   def self.find_by(thing)
-   # binding.pry
+   
    columns = self.column_names
    
    columns.each do |a| 
-     a[thing] 
+     a[thing] = 
    end 
    
    
-   
-=begin   
-    sql = "SELECT * FROM #{self.table_name} WHERE #{self.column_names}.each do |a|
-      a == thing
-    end "
-    DB[:conn].execute(sql, name)
-=end 
+ 
   end 
     
-  
+ person["favorite_thing"] = "Books" 
   
 end  
-=begin 
-
-=end 
+ 
