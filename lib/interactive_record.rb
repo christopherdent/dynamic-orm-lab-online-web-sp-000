@@ -58,7 +58,7 @@ class InteractiveRecord
    # binding.pry
     sql = "SELECT * FROM #{self.table_name} WHERE #{self.column_names}.each do |a|
       a == thing
-    end 
+    end "
     DB[:conn].execute(sql, name)
   
   end 
