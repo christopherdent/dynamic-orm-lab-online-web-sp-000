@@ -56,6 +56,8 @@ class InteractiveRecord
   
   def self.find_by(thing)
    # binding.pry
+   columns = 
+   
     sql = "SELECT * FROM #{self.table_name} WHERE #{self.column_names}.each do |a|
       a == thing
     end "
