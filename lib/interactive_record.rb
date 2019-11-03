@@ -66,7 +66,7 @@ class InteractiveRecord
  
   end 
     
- person["favorite_thing"] = "Books" 
+#person["favorite_thing"] = "Books" 
   
 end  
  
