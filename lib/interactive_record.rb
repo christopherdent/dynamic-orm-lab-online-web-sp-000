@@ -55,7 +55,7 @@ class InteractiveRecord
   end 
   
   def self.find_by(thing)
-   
+   binding.pry 
    columns = self.column_names
    
    columns.each do |a| 
