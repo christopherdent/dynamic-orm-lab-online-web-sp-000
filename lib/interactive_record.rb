@@ -58,8 +58,8 @@ class InteractiveRecord
     column_name = attribute.keys[0].to_s
     value_name = attribute.values[0]
     
-    column_names.each do |c|
-      sql = "SELECT * FROM #{self.table_name} where value_name == c" 
+    sql = "SELECT * FROM #{self.table_name} WHERE column_name = ?"  
+
       DB[:conn].execute(sql)
    end 
   end 
