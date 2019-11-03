@@ -57,10 +57,11 @@ class InteractiveRecord
   def self.find_by(attribute)
     column_name = attribute.keys[0].to_s
     value_name = attribute.values[0]
-   binding.pry 
-   
+    
+    column_names.each do |c|
+      sql = "SELECT * FROM #{self.table_name} where value_name == c" 
    end 
-   
+  end 
    
  
   end 
