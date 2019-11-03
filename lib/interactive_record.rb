@@ -59,8 +59,11 @@ class InteractiveRecord
    columns = self.column_names
    
    columns.each do |a| 
-     puts a 
+     a[thing] 
    end 
+   
+   
+   
 =begin   
     sql = "SELECT * FROM #{self.table_name} WHERE #{self.column_names}.each do |a|
       a == thing
